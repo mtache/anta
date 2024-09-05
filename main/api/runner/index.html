@@ -2373,8 +2373,7 @@
 
             <details class="quote">
               <summary>Source code in <code>anta/runner.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">34</span>
-<span class="normal">35</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">35</span>
 <span class="normal">36</span>
 <span class="normal">37</span>
 <span class="normal">38</span>
@@ -2395,7 +2394,8 @@
 <span class="normal">53</span>
 <span class="normal">54</span>
 <span class="normal">55</span>
-<span class="normal">56</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">adjust_rlimit_nofile</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+<span class="normal">56</span>
+<span class="normal">57</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">adjust_rlimit_nofile</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Adjust the maximum number of open file descriptors for the ANTA process.</span>
 
 <span class="sd">    The limit is set to the lower of the current hard limit and the value of the ANTA_NOFILE environment variable.</span>
@@ -2464,8 +2464,7 @@
 
             <details class="quote">
               <summary>Source code in <code>anta/runner.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">160</span>
-<span class="normal">161</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">161</span>
 <span class="normal">162</span>
 <span class="normal">163</span>
 <span class="normal">164</span>
@@ -2491,7 +2490,8 @@
 <span class="normal">184</span>
 <span class="normal">185</span>
 <span class="normal">186</span>
-<span class="normal">187</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_coroutines</span><span class="p">(</span><span class="n">selected_tests</span><span class="p">:</span> <span class="n">defaultdict</span><span class="p">[</span><span class="n">AntaDevice</span><span class="p">,</span> <span class="nb">set</span><span class="p">[</span><span class="n">AntaTestDefinition</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Coroutine</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">TestResult</span><span class="p">]]:</span>
+<span class="normal">187</span>
+<span class="normal">188</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">get_coroutines</span><span class="p">(</span><span class="n">selected_tests</span><span class="p">:</span> <span class="n">defaultdict</span><span class="p">[</span><span class="n">AntaDevice</span><span class="p">,</span> <span class="nb">set</span><span class="p">[</span><span class="n">AntaTestDefinition</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Coroutine</span><span class="p">[</span><span class="n">Any</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">TestResult</span><span class="p">]]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Get the coroutines for the ANTA run.</span>
 
 <span class="sd">    Parameters</span>
@@ -2542,8 +2542,7 @@
 
             <details class="quote">
               <summary>Source code in <code>anta/runner.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">59</span>
-<span class="normal">60</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">60</span>
 <span class="normal">61</span>
 <span class="normal">62</span>
 <span class="normal">63</span>
@@ -2558,7 +2557,8 @@
 <span class="normal">72</span>
 <span class="normal">73</span>
 <span class="normal">74</span>
-<span class="normal">75</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">log_cache_statistics</span><span class="p">(</span><span class="n">devices</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">AntaDevice</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">75</span>
+<span class="normal">76</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">log_cache_statistics</span><span class="p">(</span><span class="n">devices</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">AntaDevice</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Log cache statistics for each device in the inventory.</span>
 
 <span class="sd">    Parameters</span>
@@ -2604,8 +2604,7 @@ ResultManager object gets updated with the test results.</p>
 
             <details class="quote">
               <summary>Source code in <code>anta/runner.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">190</span>
-<span class="normal">191</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">191</span>
 <span class="normal">192</span>
 <span class="normal">193</span>
 <span class="normal">194</span>
@@ -2684,7 +2683,9 @@ ResultManager object gets updated with the test results.</p>
 <span class="normal">267</span>
 <span class="normal">268</span>
 <span class="normal">269</span>
-<span class="normal">270</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@cprofile</span><span class="p">()</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@cprofile</span><span class="p">()</span>
 <span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">(</span>  <span class="c1"># noqa: PLR0913</span>
     <span class="n">manager</span><span class="p">:</span> <span class="n">ResultManager</span><span class="p">,</span>
     <span class="n">inventory</span><span class="p">:</span> <span class="n">AntaInventory</span><span class="p">,</span>
@@ -2748,6 +2749,7 @@ ResultManager object gets updated with the test results.</p>
                 <span class="s2">&quot;Please consult the ANTA FAQ.&quot;</span>
             <span class="p">)</span>
 
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># noqa: ASYNC251</span>
         <span class="n">coroutines</span> <span class="o">=</span> <span class="n">get_coroutines</span><span class="p">(</span><span class="n">selected_tests</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">dry_run</span><span class="p">:</span>
@@ -2811,8 +2813,7 @@ ResultManager object gets updated with the test results.</p>
 
             <details class="quote">
               <summary>Source code in <code>anta/runner.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">114</span>
-<span class="normal">115</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">115</span>
 <span class="normal">116</span>
 <span class="normal">117</span>
 <span class="normal">118</span>
@@ -2854,7 +2855,8 @@ ResultManager object gets updated with the test results.</p>
 <span class="normal">154</span>
 <span class="normal">155</span>
 <span class="normal">156</span>
-<span class="normal">157</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">prepare_tests</span><span class="p">(</span>
+<span class="normal">157</span>
+<span class="normal">158</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">prepare_tests</span><span class="p">(</span>
     <span class="n">inventory</span><span class="p">:</span> <span class="n">AntaInventory</span><span class="p">,</span> <span class="n">catalog</span><span class="p">:</span> <span class="n">AntaCatalog</span><span class="p">,</span> <span class="n">tests</span><span class="p">:</span> <span class="nb">set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">tags</span><span class="p">:</span> <span class="nb">set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">defaultdict</span><span class="p">[</span><span class="n">AntaDevice</span><span class="p">,</span> <span class="nb">set</span><span class="p">[</span><span class="n">AntaTestDefinition</span><span class="p">]]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Prepare the tests to run.</span>
@@ -2948,8 +2950,7 @@ ResultManager object gets updated with the test results.</p>
 
             <details class="quote">
               <summary>Source code in <code>anta/runner.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 78</span>
-<span class="normal"> 79</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 79</span>
 <span class="normal"> 80</span>
 <span class="normal"> 81</span>
 <span class="normal"> 82</span>
@@ -2981,7 +2982,8 @@ ResultManager object gets updated with the test results.</p>
 <span class="normal">108</span>
 <span class="normal">109</span>
 <span class="normal">110</span>
-<span class="normal">111</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">setup_inventory</span><span class="p">(</span><span class="n">inventory</span><span class="p">:</span> <span class="n">AntaInventory</span><span class="p">,</span> <span class="n">tags</span><span class="p">:</span> <span class="nb">set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">devices</span><span class="p">:</span> <span class="nb">set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">established_only</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AntaInventory</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">111</span>
+<span class="normal">112</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">setup_inventory</span><span class="p">(</span><span class="n">inventory</span><span class="p">:</span> <span class="n">AntaInventory</span><span class="p">,</span> <span class="n">tags</span><span class="p">:</span> <span class="nb">set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="n">devices</span><span class="p">:</span> <span class="nb">set</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">established_only</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AntaInventory</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Set up the inventory for the ANTA run.</span>
 
 <span class="sd">    Parameters</span>
