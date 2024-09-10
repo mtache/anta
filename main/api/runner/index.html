@@ -2684,7 +2684,8 @@ ResultManager object gets updated with the test results.</p>
 <span class="normal">267</span>
 <span class="normal">268</span>
 <span class="normal">269</span>
-<span class="normal">270</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@cprofile</span><span class="p">()</span>
+<span class="normal">270</span>
+<span class="normal">271</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@cprofile</span><span class="p">()</span>
 <span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">(</span>  <span class="c1"># noqa: PLR0913</span>
     <span class="n">manager</span><span class="p">:</span> <span class="n">ResultManager</span><span class="p">,</span>
     <span class="n">inventory</span><span class="p">:</span> <span class="n">AntaInventory</span><span class="p">,</span>
@@ -2760,6 +2761,7 @@ ResultManager object gets updated with the test results.</p>
         <span class="n">AntaTest</span><span class="o">.</span><span class="n">nrfu_task</span> <span class="o">=</span> <span class="n">AntaTest</span><span class="o">.</span><span class="n">progress</span><span class="o">.</span><span class="n">add_task</span><span class="p">(</span><span class="s2">&quot;Running NRFU Tests...&quot;</span><span class="p">,</span> <span class="n">total</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">coroutines</span><span class="p">))</span>
 
     <span class="k">with</span> <span class="n">Catchtime</span><span class="p">(</span><span class="n">logger</span><span class="o">=</span><span class="n">logger</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Running ANTA tests&quot;</span><span class="p">):</span>
+        <span class="n">test_results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">coroutines</span><span class="p">)</span>
         <span class="n">test_results</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">coroutines</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">test_results</span><span class="p">:</span>
             <span class="n">manager</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
